@@ -25,7 +25,6 @@ function mapStateToProps(state){
         max: state.numeros.max
 
 
-
     }
 }
 
