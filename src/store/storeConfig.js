@@ -1,22 +1,10 @@
 import {createStore, combineReducers} from 'redux'
+import numerosReducer from './reducers/numeros'
 
 const reducers = combineReducers({
-    numeros: function(state,action){
-        console.log(state, '', action)
-        return {
-            min:7,
-            max:31
-        }
-    },
+    numeros: numerosReducer,
+    //basta colocar os novos reducers aqui
 
-    nomes: function(state,action){
-        console.log(state, '', action)
-        return [
-            'Ana',
-            'Bia',
-            'carlos'
-        ]
-    }
 })
 
 function storeConfig(){
